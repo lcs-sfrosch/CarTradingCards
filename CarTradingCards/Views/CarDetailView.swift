@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CarDetailView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 15) {
             
             Text("1971 Porsche 911")
                 .font(Font.custom("AmericanTypewriter-Bold",
@@ -18,6 +18,28 @@ struct CarDetailView: View {
             Image("porsche")
                 .resizable()
                 .scaledToFit()
+            
+            HStack {
+                Text("HP")
+                Spacer()
+                Text("120")
+            }
+            .padding(.horizontal)
+            
+            HStack {
+                Text("Weight")
+                Spacer()
+                Text("1 tonne")
+            }
+            .padding(.horizontal)
+            
+            HStack {
+                Text("Original Cost")
+                Spacer()
+                Text("$15,500")
+            }
+            .padding(.horizontal)
+
 
             Spacer()
         }
