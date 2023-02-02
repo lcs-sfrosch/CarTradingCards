@@ -9,9 +9,18 @@ import SwiftUI
 
 struct CarDetailView: View {
     var body: some View {
-        Image("porsche")
-            .resizable()
-            .scaledToFit()
+        VStack {
+            
+            Text("1971 Porsche 911")
+                .font(Font.custom("AmericanTypewriter-Bold",
+                                  size: 32))
+            
+            Image("porsche")
+                .resizable()
+                .scaledToFit()
+
+            Spacer()
+        }
     }
 }
 
