@@ -1,38 +1,35 @@
-//
-//  CarDetailView.swift
-//  CarTradingCards
-//
-//  Created by Sebastian Frosch on 02.02.23.
-//
 
 import SwiftUI
 
-struct CarDetailView: View {
+struct CarDetailViewTwo: View {
     var body: some View {
         HStack {
             
             VStack(spacing: 15) {
                 
-                Text("1971 Porsche 911")
+                Text("Aston Martin DB5")
                     .font(Font.custom("AmericanTypewriter-Bold",
                                       size: 32))
                 
-                Image("porsche")
+                Image("Aston")
                     .resizable()
                     .scaledToFit()
                 VStack{
                     HStack {
                         Text("HP")
                         Spacer()
-                        Text("120")
+                        Text("282")
                     }.padding(.horizontal, 5)
+                    
+                    Divider()
+                        .overlay(Color.black)
                 }
                 .padding(.horizontal)
                 VStack {
                     HStack {
                         Text("Weight")
                         Spacer()
-                        Text("1000 KG")
+                        Text("1502 KG")
                     }.padding(.horizontal, 5)
                     
                     Divider()
@@ -44,7 +41,7 @@ struct CarDetailView: View {
                     HStack {
                         Text("Original Cost")
                         Spacer()
-                        Text("$13,500")
+                        Text("$12,995")
                     }.padding(.horizontal, 5)
                     
                     Divider()
@@ -54,15 +51,16 @@ struct CarDetailView: View {
                 
             }.padding(.vertical, 50)
                 .padding(.horizontal, 15)
-                .border(.green, width: 10)
+                .border(.blue, width: 10)
                 .cornerRadius(20)
         }
         .padding(.horizontal, 25)
     }
 }
 
-struct CarDetailView_Previews: PreviewProvider {
+struct CarDetailViewTwo_Previews: PreviewProvider {
     static var previews: some View {
-        CarDetailView()
+        CarDetailViewTwo()
     }
 }
+
